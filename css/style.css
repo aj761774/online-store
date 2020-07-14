@@ -4,7 +4,7 @@ html{
 /* body */
  body{
   /* background-color: #ffbf0040; */
-background-image: linear-gradient(to right,#036,#000);
+/* background-image: linear-gradient(to right,#036,#000); */
 
 }
 /* loading */
@@ -590,55 +590,44 @@ color:white;
 text-decoration: underline;
 }
 /* register-login */
+
 .register-login{
-   background-color:white;
-   width:320px;
-   text-align: center;
-margin: 0 auto;
-   display: none;
-   position:fixed;
-   top:60px;
-   left:0;
-   right:0;
-   z-index:10000;
+  text-align: center;
+}
+.modal-content{
+  background-color: mintcream;
+}
+.register-login label{
+  font-weight: bolder;
 }
 .register-login input{
    min-width:280px;
    max-width:480px;
    height:2.5rem;
    border:1px solid grey;
-
-   border-radius:15px;
+   border-radius:7px;
 }
-.register-login input:focus{
+.register-login input::placeholder{
+  position: relative;
+  left:1rem;
+}
+.register-login input:focus,.register-login .close:focus{
   outline: none;
 }
-.register-login .register,.register-login .login,.register-login .forget{
-  padding:1.5rem;
-  display: none;
+.register-login .modal-body button{
+   width:280px;
 }
-.register-login .register  button,.register-login .login  button,.register-login .forget button{
-   margin-top:1rem;
-   width:104%;
+.register-login .close{
+font-weight: bolder;
 }
-.register-login h4{
-   font-style:sans-serif;
-   color:white;
-  background-image: linear-gradient(45deg,#036,#000000);
-   width:100%;
-   display:inline-block;
+.register-login .close:hover{
+  color:red;
 }
-.register-login h4 span{
-  text-align: center;
-float: right;
-cursor: pointer;
-font-size: 2rem;
-border: none;
-transform: rotate(45deg);
+.register-login .modal-header{
+  font-style: oblique;
+  background-image: linear-gradient(45deg,#036,#fff); 
 }
-.register-login h4 span:hover{
-  color: red;
-}
+
 /* product new style */
 .popular-title{
   font-family: sans-serif;

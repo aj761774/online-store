@@ -254,38 +254,68 @@
 
 <!-- register-login -->
 <div class="register-login">
-<h4>THETRIBALSHOP<span>+</span></h4>
-<div class="register">
-<label for="email" >Email</label><br>
-<input class="shadow" type="Email" name="email"  value=""><br>
-<label for="password">password</label><br>
-<input class="shadow" type="password" name="" value=""><br>
-<label for="confirm-password">confirm password</label><br>
-<input class="shadow" type="password" name="confirm-password"value="">
-<button type="submit" class="btn btn-dark" name="button">submit</button>
-<button type="button" class="btn btn-secondary login-form" name="button">Existing user?click here</button>
-</div>
 
-<div class="login">
-<label for="email" >Email</label><br>
-<input class="shadow" type="Email" name="email"  value=""><br>
-<label for="password">password</label><br>
-<input class="shadow" type="password" name="" value=""><br>
-<button type="submit" class="btn btn-dark" name="button">submit</button>
-<button type="button" class="btn btn-secondary register-form" name="button">New user?click here</button>
-<button  class="btn btn-outline-dark forget-form">forget password</button>
-</div>
-
-<div class="forget">
-<label for="email" >Email</label><br>
-<input class="shadow" type="Email" name="email"  value=""><br>
-<button type="submit" class="btn btn-dark" name="button">Send OTP</button>
-<button type="button" class="btn btn-secondary login-form" name="button">Back to login</button>
-</div>
-
-</div>
-
-<!-- register login end -->
+  <div id="register" class="fade modal">
+    <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+  <h5 class="modal-title text-white">THETRIBESSHOP</h5>
+  <button class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <label for="email" >Email</label><br>
+      <input class="shadow" type="Email" name="email"  value=""><br>
+      <label for="password">password</label><br>
+      <input class="shadow" type="password"  name="" value=""><br>
+      <label for="confirm-password">confirm password</label><br>
+      <input class="shadow" type="password" name="confirm-password"value=""> <br>
+      <button type="submit" class="btn btn-dark mt-2 mb-2"  name="button">submit</button> <br>
+      <button type="button" class="btn btn-secondary login-form mb-4"  name="button">Existing user?click here</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <div id="login" class="fade modal">
+    <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+  <h5 class="modal-title text-white">THETRIBESSHOP</h5>
+  <button class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <label for="email" >Email</label><br>
+      <input class="shadow" type="Email" name="email"  value=""><br>
+      <label for="password">password</label><br>
+      <input class="shadow" type="password" name="" value=""><br>
+      <button type="submit" class="btn btn-dark mt-2 mb-2" name="button">submit</button> <br>
+      <button type="button" class="btn btn-secondary register-form mb-2" name="button">New user?click here</button> <br>
+      <button  class="btn btn-outline-dark forget-form mb-4" >forget password</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <div id="forget" class="fade modal">
+    <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+  <h5 class="modal-title text-white">THETRIBESSHOP</h5>
+  <button class="close" data-dismiss="modal">&times;</button>
+    </div>
+  <div class="modal-body">
+  <label for="email" >Email</label><br>
+  <input class="shadow" type="Email" name="email"  value=""><br>
+  <button type="submit" class="btn btn-dark mt-2 mb-2"  name="button">Send OTP</button> <br>
+  <button type="button" class="btn btn-secondary login-form mb-4"  name="button">Back to login</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  
+  <!-- register login end -->
 
    <div class="about-container">
 <div class="story-heading-container">
@@ -383,13 +413,12 @@
 
   <!-- Js Plugins -->
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-
-  <script src="js/bootstrap.min.js"></script>
-
-  <script src="js/main.js"></script>
-  <script src="js/product.js"></script>
-  <script src="js/product-description.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/product.js"></script>
+<script src="js/product-description.js"></script>
   </body>
   
 </html>

@@ -7,9 +7,6 @@ $('document').ready(function() {
         left: '-400px'
       });
     }
-    if ($('.register-login').css('display') == 'block') {
-      $('.register-login').slideUp();
-    }
     if ($('.side-navigation-Apparel').css('display') == 'block') {
       $('.side-navigation-Apparel').fadeOut();
     }
@@ -57,7 +54,37 @@ $('document').ready(function() {
     }
   };
   
+  // register login section
+  $('.register-form').click(()=>{
+    if($('#login').css('display')=='block'){
+      $('#login').modal('hide'); 
+    }
+    if($('#forget').css('display')=='block'){
+      $('#forget').modal('hide'); 
+    }
+    $('#register').modal('toggle');
+    });
 
+    $('.login-form').click(()=>{
+      if($('#register').css('display')=='block'){
+      $('#register').modal('hide'); 
+    }
+    if($('#forget').css('display')=='block'){
+      $('#forget').modal('hide'); 
+    }
+     $('#login').modal('toggle');
+    });
+
+    $('.forget-form').click(()=>{
+      if($('#register').css('display')=='block'){
+      $('#register').modal('hide'); 
+      }
+      if($('#login').css('display')=='block'){
+      $('#login').modal('hide'); 
+      }
+     $('#forget').modal('toggle');
+    });
+  // register login end
   /*------------------
         Background Set
     --------------------*/
@@ -210,31 +237,6 @@ $('document').ready(function() {
     $('.side-navigation-decoratives').fadeOut();
   });
 
-  // register
-  $('.register-form').click(function() {
-    $('.register-login').slideDown();
-    $('.register').slideDown();
-    $('.login').hide();
-    $('.forget').hide();
-  });
-  // login
-  $('.login-form').click(function() {
-    $('.register-login').show();
-    $('.login').slideDown();
-    $('.register').hide();
-    $('.forget').hide();
-
-  });
-  // forget
-  $('.forget-form').click(function() {
-    $('.register-login').show();
-    $('.forget').slideDown();
-    $('.register').hide();
-    $('.login').hide();
-  });
-  $('.register-login h4 span').click(function() {
-    $('.register-login').slideUp();
-  });
 
   // categories-link
   $('.Western').click(function() {
