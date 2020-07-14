@@ -639,7 +639,6 @@ font-weight: bolder;
   margin-bottom:0;
 }
 .product-layout{
-
 font-family: sans-serif;
 text-align: center;
 border: 1px solid #00000010;
@@ -648,7 +647,7 @@ border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 position: relative;
 z-index: 1;
-  margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
 .product-layout .product-image{
   position: relative;
