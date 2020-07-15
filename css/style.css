@@ -1198,7 +1198,7 @@ color:purple;
   padding:1rem;
   text-align: center;
   background-color:white;
-  color: white;
+  /* color: white; */
 }
 
 .team-card img{
