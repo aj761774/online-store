@@ -251,6 +251,108 @@
 </header>
 <!-- header end -->
 
+<!-- sort modal -->
+<div id="sort" class="fade modal">
+  <div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header bg-dark">
+<h5 class="modal-title text-white">Sort By</h5>
+<button class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+      <p data-dismiss="modal" id="default-sorting"> <input type="radio"> Default sorting</p>
+      <p data-dismiss="modal" id="popularity"><input type="radio"> Popularity</span>
+      <p data-dismiss="modal" id="average-rating"><input type="radio"> Average Rating</p>
+      <p data-dismiss="modal" id="newness"><input type="radio"> Newness</span>
+      <p data-dismiss="modal" id="lowToHigh"><input type="radio"> Price: low to high</p>
+      <p data-dismiss="modal" id="highToLow"><input type="radio"> Price: high to low</p>
+  </div>
+</div>
+</div>
+</div>
+<!-- sort modal end -->
+
+<!-- filter modal -->
+<div class="filter-section">
+<div id="filter" class="fade modal">
+  <div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header bg-dark">
+<h5 class="modal-title  text-white">Filter By Color</h5>
+<button class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="red"> Red</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="green"> Green</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="purple"> Purple</span>
+        </div>
+      
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="blue"> Blue</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="yellow"> Yellow </span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="pink"> Pink</span>
+        </div>
+     
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="grey"> Grey </span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="brown"> Brown </span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="black"> Black</span>
+        </div>
+      </div>
+
+      <div class="row  bg-dark text-white mt-2 mb-2">
+        <div class="col-12">Filter By Price</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet5-10"> $5-10</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet10-20"> $10-20</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet20-30"> $20-30</span>
+        </div>
+   
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet30-40"> $30-40</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet40-50"> $40-50</span>
+        </div>
+        <div class="col-6 col-sm-4">
+          <span> <input type="checkbox" name="" value="bet50-60"> $50-60</span>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="modal-footer">
+     <button class="btn btn-outline-dark shadow btn-block  applyFilter" data-dismiss="modal"  name="button">Apply filter</button>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- filter modal end -->
 <!-- register login start -->
 <div class="register-login">
 
@@ -316,42 +418,15 @@
   
   <!-- register login end -->
 
-<div class="filter-section">
-  <div class="filter-section-top-part">
-
+<div class="row shadow filter-sort-btn" style="padding-top:6rem;background-color:gainsboro">
+  <div class="col-6" style="border-right:4px solid grey;">
+    <h5 class="filter-btn" data-toggle="modal" data-target="#filter">Filter</h5>
   </div>
-<div class="filter-by">
-<h3>filter by color</h3>
+  <div class="col-6">
+    <h5 class="sort-btn" data-toggle="modal" data-target="#sort">Sort By</h5>
+  </div>
 </div>
-<span class="close-filter">&#10005;</span>
-  <button class="btn btn-outline-light applyFilter" style="margin:0.5rem 3rem 0 0;padding:0.2rem 2rem;width:100%;" name="button">Apply filter</button>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="red"> <div style="background-color:red;width:13px;height:13px;display:inline-block;"></div> Red</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="green"> <div style="background-color:green;width:13px;height:13px;display:inline-block;"></div> Green</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="purple"> <div style="background-color:purple;width:13px;height:13px;display:inline-block;"></div> Purple</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="blue"> <div style="background-color:blue;width:13px;height:13px;display:inline-block;"></div> Blue</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="yellow"> <div style="background-color:yellow;width:13px;height:13px;display:inline-block;"></div> Yellow</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="pink"> <div style="background-color:pink;width:13px;height:13px;display:inline-block;"></div> Pink</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="brown"> <div style="background-color:brown;width:13px;height:13px;display:inline-block;"></div> Brown</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="black"> <div style="background-color:black;width:13px;height:13px;display:inline-block;"></div> Black</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="grey"> <div style="background-color:grey;width:13px;height:13px;display:inline-block;"></div> Grey</span>
-    <span class="filter-section-items"> <input type="checkbox" name="" value="white"> <div style="background-color:white;width:13px;height:13px;display:inline-block;"></div> White</span>
-    <div class="filter-by">
-    <h3>filter by Price</h3>
-    </div>
-        <span class="filter-section-items"> <input type="checkbox" name="" value="bet10-20"> $10-20</span>
-        <span class="filter-section-items"> <input type="checkbox" name="" value="bet20-30"> $20-30</span>
-        <span class="filter-section-items"> <input type="checkbox" name="" value="bet30-40"> $30-40</span>
-        <span class="filter-section-items"> <input type="checkbox" name="" value="bet40-50"> $40-50</span>
-        <span class="filter-section-items"> <input type="checkbox" name="" value="bet50-60"> $50-60</span>
-
-</div>
-
-
-
 <div class="container-fluid">
-  <button class="btn btn-danger filter-btn" style="padding:0.5rem 2rem;margin:0.5rem 0;" name="button">Filter</button><br>
-  <!-- <div class="row"> -->
-    <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-6 "> -->
       <div class="red bet10-20  product-grid">
         <div class="product-image">
           <span>
@@ -382,10 +457,7 @@
         <a href="#" class="add-to-cart">+ Add to cart</a>
       </div>
       </div>
-    <!-- </div> -->
 
-
-    <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-6"> -->
       <div class="green product-grid">
         <div class="product-image">
           <span>
@@ -2820,8 +2892,8 @@
     <h2 id="contact">Contact us</h2>
 
     <p>🏠 Tribes India (TRIFED), Beej Bhavan, Pusa Complex, New Delhi 110012 India</p>
-    <p>☎ 011-25842975 (09:30 a.m. - 06:00 p.m.)</p>
-    <p>✉ sales@tribalshop.com</p>
+    <p><a id="call" href="tel:01125842975">☎ 011-25842975 (09:30 a.m. - 06:00 p.m.)</a></p>
+    <p><a id="email"  href="mailto:confusion@food.net">✉ sales@tribalshop.com</a></p>
   </div>
 </div>
 

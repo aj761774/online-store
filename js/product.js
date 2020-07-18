@@ -20,9 +20,6 @@ function sideMenuMangage() {
   if ($('.side-navigation-Essensials').css('display') == 'block') {
     $('.side-navigation-Essensials').fadeOut();
   }
-  if($('.filter-section').css('display') == 'block'){
-    $('.filter-section').fadeOut();
-  }
 };
 
 $('.search-icon').click(function() {
@@ -77,52 +74,13 @@ $('.submenu-close-Essensials').click(function() {
   $('.side-navigation-Essensials').fadeOut();
 });
 
-// register
-$('.register-form').click(function() {
-  $('.register-login').show();
-  $('.register').slideDown();
-  $('.login').hide();
-  $('.forget').hide();
-  if($('.filter-section').css('display') == 'block'){
-    $('.filter-section').fadeOut();
-  }
-});
-// login
-$('.login-form').click(function() {
-  $('.register-login').show();
-  $('.login').slideDown();
-  $('.register').hide();
-  $('.forget').hide();
-  if($('.filter-section').css('display') == 'block'){
-    $('.filter-section').fadeOut();
-  }
-});
-// forget
-$('.forget-form').click(function() {
-  $('.register-login').show();
-  $('.forget').slideDown();
-  $('.register').hide();
-  $('.login').hide();
-});
-$('.register-login h4 span').click(function() {
-  $('.register-login').slideUp();
-});
+
 
 
 
 // product page js start
-$('.filter-btn').click(function(){
-  $('.filter-section').fadeIn();
-});
-
-
-$('.close-filter').click(function(){
-  $('.filter-section').fadeOut();
-});
-
 
 $('.applyFilter').click(function(){
-    $('.filter-section').fadeOut();
   const checkboxValues=[];
   const checkedCheckboxes = $('input[type="checkbox"]:checked');
   if(checkedCheckboxes.length>0){
@@ -147,6 +105,4 @@ $(window).scroll(function() {
   if ($('.search-part').css('top') == '0px') {
     $('.search-part').animate({top: '-250px'});
   }
-  sideMenuMangage();
-    $('.filter-section').fadeOut();
 });

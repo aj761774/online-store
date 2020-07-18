@@ -584,6 +584,13 @@ text-align: left;
 color:white;
 text-decoration: underline;
 }
+#call:hover,#email:hover{
+color: black;
+}
+a#call,a#email{
+  text-decoration: none;
+  color:white;
+} 
 /* register-login */
 
 .register-login{
@@ -708,29 +715,17 @@ p.title{
 /* product page style */
 .container-fluid{
 text-align: center;
-padding-top:5.5rem;
+padding-top:1rem;
+}
+.filter-sort-btn div{
+  cursor: pointer;
+}
+.filter-sort-btn h5{
+  text-align: center;
 }
 
-.filter-section-top-part{
-    width:319px;
-    height:30px;
-}
-.filter-section{
-  position: fixed;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  display: none;
-  text-align: center;
-  border-right: 0.1rem solid gray;
-background-image: linear-gradient(to bottom,#036,#000);
-  /* background-color:#00008b; */
-  font-size:1rem;
-  color: white;
-  width:319px;
-  height:100vh;
-  z-index: 101;
-}
-.filter-section::-webkit-scrollbar,
+
+
 .side-navigation::-webkit-scrollbar,
 .side-navigation-Apparel::-webkit-scrollbar,
 .side-navigation-Accessories::-webkit-scrollbar,
@@ -752,7 +747,7 @@ background-image: linear-gradient(to bottom,#036,#000);
   background-color: #036;
 
 }
-.filter-section::-webkit-scrollbar-thumb,
+
 .side-navigation::-webkit-scrollbar-thumb,
 .side-navigation-Apparel::-webkit-scrollbar-thumb,
 .side-navigation-Accessories::-webkit-scrollbar-thumb,
@@ -774,30 +769,9 @@ background-image: linear-gradient(to bottom,#036,#000);
     border-radius: 15px;
 }
 
-.filter-by{
-  width:319px;
- border-bottom: 1px solid grey;
-  color:pink;
-}
-.filter-section-items{
-  display:block;
-  text-align: left;
-  padding:0.1rem 1rem 0.1rem 5rem;
-  border-bottom: 1px solid grey;
- font-size:1rem;
-}
-.close-filter
-{
-  cursor: pointer;
-top:0.02rem;
-position:absolute;
-left:17.7rem;
-padding:0 0.5rem 0 0.5rem;
-z-index:5;
-}
-.close-filter:hover{
-  color: red;
-}
+
+
+
 
 .product-grid{
  width: 290px;
@@ -993,7 +967,6 @@ transition: all 0.3s ease-out 0s;
 
 .product-description-page{
 padding-left: 1rem;
-background-color: lightyellow;
 padding-top: 4.5rem;
 color:black;
 display:flex;
@@ -1061,6 +1034,16 @@ width:450px;
   .cart-btn:hover,.buy-btn:hover{
     color: #fff;
     background-size: 100%;
+  }
+  @media screen and (max-width:600px){
+    .cart-btn{
+      position: sticky;
+      bottom: 0;
+    }
+    .buy-btn{
+      position: sticky;
+      bottom: 3rem;
+    }
   }
 .wishlist{
 position: relative;

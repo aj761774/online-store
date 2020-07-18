@@ -311,7 +311,6 @@ $(window).scroll(function() {
   if ($('.search-part').css('top') == '0px') {
     $('.search-part').animate({top: '-250px'});
   }
-  sideMenuMangage();
 });
 
 
