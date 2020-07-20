@@ -1,7 +1,9 @@
 html{
   scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
 /* loading */
 #loading{
  width: 100%;
@@ -25,10 +27,14 @@ header{
 header div{
   padding-top:1.3rem;
 }
-.logo{
+a span.logo{
 font-family: sans-serif;
   margin-right:7%;
   color:pink;
+  transition: 0.3s ease;
+}
+.logo:hover{
+  color: floralwhite;
 }
 header button{
   cursor: pointer;
@@ -259,7 +265,6 @@ padding-top: 4rem;
   width:319px;
   height: 150px;
   background-color:#f01738;
-  border-bottom: 2px solid white;
   margin-bottom: 1rem;
 }
 .side-navigation-top-part h5{
@@ -349,7 +354,7 @@ z-index: 101;
   top:0;
   left:0;
   display: none;
-  background-color:#f01738;
+  background-color: rgb(236, 41, 73);
   z-index: 102;
 }
 .side-navigation-women,
@@ -367,7 +372,7 @@ z-index: 101;
   top:0;
   left:0;
   display: none;
-  background-color:#f01738;
+  background-color: rgb(236, 41, 73);
   z-index: 103;
 }
 .submenu{
@@ -754,7 +759,8 @@ background: #ef5777;
 }
 p.title{
   padding: 0.5rem 0;
-  background-color: #036;
+  background-color: rgb(236, 41, 73);
+  /* background-color: #036; */
   color: white;
 }
 .product-layout p{
