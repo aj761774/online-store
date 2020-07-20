@@ -84,6 +84,21 @@ $('document').ready(function() {
       }
      $('#forget').modal('toggle');
     });
+
+    $('.input-email').click(()=>{
+      
+     $('.email').animate({top:'0.5rem'},80);
+
+    });
+    $('.input-mobile').click(()=>{
+      $('.mobile').animate({top:'0.5rem'},80);
+  });
+  $('.input-password').click(()=>{
+    $('.password').animate({top:'0.5rem'},80);
+});
+$('.input-confirm-password').click(()=>{
+  $('.confirm-password').animate({top:'0.5rem'},80);
+});
   // register login end
   /*------------------
         Background Set

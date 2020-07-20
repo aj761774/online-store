@@ -14,8 +14,8 @@ html{
 }
 /* header start */
 header{
-
-  background-color:#00008b;
+  background-color: #fa4248;
+  /* background-color:#00008b; */
   height: 80px;
   width: 100%;
   position: fixed;
@@ -34,7 +34,8 @@ header button{
   cursor: pointer;
 font-family: serif;
 margin-right:7%;
-background-color:#00008b;
+background-color: #fa4248;
+/* background-color:#00008b; */
 border: none;
 color:white;
 font-size: 20px;
@@ -44,7 +45,7 @@ header button:focus{
 }
 header button:hover{
   text-transform:capitalize;
-  color:pink;
+  opacity: 0.8;
 }
 header .menu-button{
   margin-left: 1rem;
@@ -66,12 +67,13 @@ header .menu-button{
   padding: 1rem;
   text-align: center;
   font-family: serif;
-  background-color: #036;
+  background-color: #f95486;
   color:pink;
 }
 .categories .categories-link{
   margin-top:0;
-  background-color:#00008b;
+  /* background-color:#00008b; */
+  background-color: #ff2a5b;
   padding:1rem;
   text-align: center;
 }
@@ -210,7 +212,8 @@ left: 0;
 height:250px;
 width: 100%;
 text-align: center;
-background-color: #000000;
+background-color: #fe234f;
+/* background-color: #000000; */
 z-index: 101;
 }
 .search-bar{
@@ -218,13 +221,17 @@ z-index: 101;
  color: white;
  margin-top: 1rem;
  margin-bottom:0.6rem;
- background-color: black;
+ background-color: #fe234f;
+ /* background-color: black; */
   border:none;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid #f2bbc3;
+}
+.search-bar::placeholder{
+  color: white;
 }
 .search-bar:focus{
   outline: none;
-  border-bottom-color: purple;
+  border-bottom-color: grey;
 }
 .seacrh-part-content{
 padding-top: 4rem;
@@ -238,7 +245,7 @@ padding-top: 4rem;
   height: 50px;
   font-size: 30px;
   margin:0 auto;
-  background-color:grey;
+  background-color:floralwhite;
   transform: rotate(45deg);
   border-radius: 100%;
   border: none;
@@ -250,8 +257,21 @@ padding-top: 4rem;
 /* side navigation */
 .side-navigation-top-part{
   width:319px;
-  height: 70px;
-  background-color:black;
+  height: 150px;
+  background-color:#f01738;
+  border-bottom: 2px solid white;
+  margin-bottom: 1rem;
+}
+.side-navigation-top-part h5{
+  color: white;
+}
+.side-navigation-top-part img{
+  
+ margin:0.5rem auto ;
+  width: 100px;
+  height: 100px;
+  border:5px solid grey;
+  border-radius: 100%;
 }
 .side-navigation,
 .side-navigation-Apparel,
@@ -278,8 +298,7 @@ padding-top: 4rem;
   position: fixed;
   top:0;
   left:-400px;
-  background-image: linear-gradient(to right,#036,#000);
-  /* background-color:#00008b; */
+  background-color: rgb(236, 41, 73);
   font-size:1.5rem;
   width:20rem;
   height:100vh;
@@ -330,7 +349,7 @@ z-index: 101;
   top:0;
   left:0;
   display: none;
-  background-image: linear-gradient(to right,white,#036);
+  background-color:#f01738;
   z-index: 102;
 }
 .side-navigation-women,
@@ -348,7 +367,7 @@ z-index: 101;
   top:0;
   left:0;
   display: none;
-  background-image: linear-gradient(to right,white,#036);
+  background-color:#f01738;
   z-index: 103;
 }
 .submenu{
@@ -404,7 +423,7 @@ z-index:103;
 .submenu-close-paintings:hover,
 .submenu-close-decoratives:hover
 {
-  color: red;
+  color: black;
   cursor: pointer;
 }
 /* side navigation Apparel Accessories homeLiving Essensials end */
@@ -441,8 +460,9 @@ z-index:103;
 .hero-items .owl-nav button[type=button] {
 	display: inline-block;
 	height:45px;
-	width: 45px;
-	background:#036;
+  width: 45px;
+  background: #f01738;
+	/* background:#036; */
 	font-size: 25px;
 	color: #fff;
 	/* border-radius: 50%; */
@@ -525,7 +545,8 @@ background-size: cover;
 /* newslater */
 .newslater{
   text-align: center;
-background-color:#00AA8D;
+/* background-color:#00AA8D; */
+background-color: #fe425c;
 }
 .newslater h4{
   padding-top: 2rem;
@@ -539,8 +560,8 @@ background-color:#00AA8D;
 }
 .newslater-input-field{
   width:50%;
-  background-color:#00AA8D;
-
+  /* background-color:#00AA8D; */
+  background-color: #fe425c;
   margin-bottom:0.5rem;
   height: 2.3rem;
   /* border-radius: 10px; */
@@ -562,11 +583,14 @@ border-bottom:2px solid white ;
 display: block;
 margin: 0 auto;
 width: 50%;
+/* color: black;
+background-color: #ffb2c7; */
 
 }
 /* footer part */
 .footer{
-background-color:#00AA8D;
+/* background-color:#00AA8D; */
+background-color: #fe425c;
 color:white;
 text-align: left;
 }
@@ -592,22 +616,35 @@ a#call,a#email{
   color:white;
 } 
 /* register-login */
-
-.register-login{
-  text-align: center;
-}
 .modal-content{
-  background-color: mintcream;
+  border-radius: 30px;
 }
-.register-login label{
+.register-login .modal-body{
+  padding:1rem  3rem;
+}
+.register-login .modal-body h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
 }
+.register-login .modal-body p{
+  cursor: pointer;
+  margin: auto;
+  font-size: 0.9rem;
+  width: 80%;
+}
+.register-login label{
+  color:rgba(0,0,0,0.5);
+  position: relative;
+  top:1.4rem;
+}
+
 .register-login input{
-   min-width:280px;
-   max-width:480px;
-   height:2.5rem;
-   border:1px solid grey;
-   border-radius:7px;
+   width:100%;
+   border: none;
+   border-bottom:1px solid grey;
+}
+.register-login input:focus{
+  border-color: red;
 }
 .register-login input::placeholder{
   position: relative;
@@ -617,19 +654,32 @@ a#call,a#email{
   outline: none;
 }
 .register-login .modal-body button{
-   width:280px;
+  margin-top: 2rem; 
+  width:100%;
+  border-radius: 30px;
+  background-color: #fa4248;
+  transition: 0.3s ease;
+  color: white;
+}
+.register-login .modal-body button:hover{
+  background-color:red;
 }
 .register-login .close{
 font-weight: bolder;
+color: white;
 }
 .register-login .close:hover{
-  color:red;
+  color:black;
 }
 .register-login .modal-header{
-  font-style: oblique;
-  background-image: linear-gradient(45deg,#036,#fff); 
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
-
+.register-login .modal-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background-color:rgb(236, 41, 73);
+}
 /* product new style */
 .popular-title{
   font-family: sans-serif;
@@ -743,30 +793,7 @@ padding-top:1rem;
 .side-navigation-paintings::-webkit-scrollbar,
 .side-navigation-decoratives::-webkit-scrollbar
 {
-  width:12px;
-  background-color: #036;
-
-}
-
-.side-navigation::-webkit-scrollbar-thumb,
-.side-navigation-Apparel::-webkit-scrollbar-thumb,
-.side-navigation-Accessories::-webkit-scrollbar-thumb,
-.side-navigation-Home-living::-webkit-scrollbar-thumb,
-.side-navigation-Essensials::-webkit-scrollbar-thumb,
-.side-navigation-women::-webkit-scrollbar-thumb,
-.side-navigation-men::-webkit-scrollbar-thumb,
-.side-navigation-tribes-heritage::-webkit-scrollbar-thumb,
-.side-navigation-designer::-webkit-scrollbar-thumb,
-.side-navigation-bags::-webkit-scrollbar-thumb,
-.side-navigation-jewellery::-webkit-scrollbar-thumb,
-.side-navigation-stationery::-webkit-scrollbar-thumb,
-.side-navigation-home-linen::-webkit-scrollbar-thumb,
-.side-navigation-artEfacts::-webkit-scrollbar-thumb,
-.side-navigation-paintings::-webkit-scrollbar-thumb,
-.side-navigation-decoratives::-webkit-scrollbar-thumb
-{
-  background-color:#000;
-    border-radius: 15px;
+  display: none;
 }
 
 
