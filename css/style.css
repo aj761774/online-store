@@ -1237,3 +1237,9 @@ color:purple;
   color:green;
   font-weight: bolder;
 }
+#addedItems .checkout-btn{
+  border-radius: 15px;
+  margin: 1rem;
+  padding-left:1.3rem ;
+  padding-right: 1.3rem;
+}

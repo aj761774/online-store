@@ -343,7 +343,10 @@
 
 <!-- register login end -->
 <div id="addedItems">
-    <div  style="padding-top:100px;padding-bottom: 1rem;margin:0 1rem;">
+    <div  style="padding-top:100px;padding-bottom: 1rem;">
+         <div>
+           <button class="btn-danger shadow rounded" style="float: right;margin-right:0.5rem;">Clear cart</button>
+         </div>
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
                 <thead>
@@ -365,6 +368,7 @@
                            <span id="count"> 1 </span> 
                         <button id="decreaseProductcount"  type="button" name="button">-</button>   
                         </div>
+                      <div> <button class="btn btn-dark checkout-btn shadow">Checkout</button></div> 
                       </td>
                       <td>$12</td>
                     </tr>
@@ -372,7 +376,9 @@
             </table>
           </div>
        
-     
+ <div>
+   <h4 class="text-success">Grand total : <span class="grand-total" style="color: red;">$12</span></h4>
+ </div>    
 </div>
 
 </div>
