@@ -1238,8 +1238,17 @@ color:purple;
   font-weight: bolder;
 }
 #addedItems .checkout-btn{
+  width: 120px;
   border-radius: 15px;
   margin: 1rem;
   padding-left:1.3rem ;
   padding-right: 1.3rem;
+}
+#addedItems .delete-btn{
+  width: 120px;
+  border-radius: 15px;
+  margin: 1rem;
+  margin-top:0;
+  padding-left:1.2rem ;
+  padding-right: 1.2rem;
 }
