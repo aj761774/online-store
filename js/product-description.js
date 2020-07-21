@@ -38,6 +38,8 @@ $('#related-carousel').owlCarousel({
       document.getElementById('count').textContent=count;
     });
     document.getElementById('decreaseProductcount').addEventListener('click',function(){
-      count-=1;
+      if (count>0){
+        count-=1;
       document.getElementById('count').textContent=count;
+    }
     });

@@ -1226,3 +1226,14 @@ color:purple;
 .team-card h5{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#addedItems{
+  text-align: center;
+}
+#addedItems .price,#addedItems .name{
+  margin: 0;
+  padding: 0;
+}
+#addedItems .price{
+  color:green;
+  font-weight: bolder;
+}
