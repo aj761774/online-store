@@ -387,9 +387,33 @@
 
 </div>
 </div>
+<p id="clear-cart-mobile">
+  <button class="btn-danger shadow rounded ml-3">Clear cart</button>
+</p>
+<div id="addedItemsMobile">
+ <div class="cart-card-mobile ml-3 shadow">
+<div class="cart-card-mobile-header">
+  <span class="name pt-2 pl-2">Krishna statue</span>
+  <span class="price pt-2 pl-2">$100.00</span>
+  <img src="img/dhokra.jpg" class="image pt-2 pb-2 " alt="">
+</div>
+<div class="cart-card-mobile-body">
+  <div id="productcount"> 
+    <button id="decreaseProductcount"  type="button" name="button">-</button>
+     <span id="count"> 1 </span> 
+     <button id="increaseProductcount"  type="button" name="button">+</button>
+  </div>
+ <button class="btn btn-warning delete-btn text-white"><span class="fa fa-trash fa-lg"></span></button>
+ <button class="btn btn-danger wishlist-btn "><span class="fa fa-heart fa-lg"></span></button>
+   <p class="ml-2 ">Total : $100.00</p>
+   <button class="btn btn-warning checkout-btn btn-block">Buy now</button>
+</div>
+ </div>
+
+</div>
 
 
-<div class="table-responsive text-center">
+<div class="table-responsive text-center" id="total">
   <table class="table table-striped">
       <thead>
           <tr>
@@ -417,7 +441,7 @@
 
 
 
-<div class="recommanded-section">
+<div id="recommanded-section">
 <h3 style="text-align:center;padding:1rem;">Recommanded products</h3>
 <div class="owl-carousel" id="related-carousel" style="text-align:center;" >
 
