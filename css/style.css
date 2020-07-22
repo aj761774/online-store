@@ -1088,10 +1088,14 @@ background-color:black;
 padding: 0.2rem;
 border-radius: 100%;
 }
-.wishlist:hover,#decreaseProductcount:hover,#increaseProductcount:hover{
+.wishlist:hover,#decreaseProductcount:hover,#increaseProductcount:hover,
+.decreaseProductcount:hover,.increaseProductcount:hover
+{
 opacity: 0.7;
 }
-#decreaseProductcount,#increaseProductcount{
+#decreaseProductcount,#increaseProductcount,
+.decreaseProductcount,.increaseProductcount
+{
 background-color:#00000070;
 color:white;
 border: 1px solid grey;
@@ -1101,13 +1105,15 @@ padding:0 0.55rem;
 background-color: #036;
 
 }
-#increaseProductcount{
+#increaseProductcount,.increaseProductcount{
 padding: 0 0.4rem;
 }
-#decreaseProductcount:focus,#increaseProductcount:focus{
+#decreaseProductcount:focus,#increaseProductcount:focus,
+.decreaseProductcount:focus,.increaseProductcount:focus
+{
 outline:none;
 }
-#productcount{
+#productcount,.productcount{
 text-align: center;
 background-color:#000;
 font-weight:bolder;
@@ -1279,7 +1285,7 @@ color:purple;
 #addedItemsMobile .price{
 position: relative;right:7rem
 }
-#addedItemsMobile #productcount{
+#addedItemsMobile .productcount{
   width:120px;
   margin:0.5rem 0.4rem;
 }
@@ -1303,4 +1309,8 @@ position: relative;right:7rem
     display: block;
   }
 
+}
+
+#recommanded-section .product-image img{
+  height: 300px;
 }
