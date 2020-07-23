@@ -1,57 +1,59 @@
 'use strict';
 $('document').ready(function() {
+// side navigations
+const sideNavigationItems = document.querySelectorAll('.side-navigation .navigation-item');
+for(let i = 0; i < sideNavigationItems.length; i++){
+  if(sideNavigationItems[i].hasAttribute('id')){
+  sideNavigationItems[i].addEventListener('click',()=>{
+         const ID = sideNavigationItems[i].getAttribute('id');
+         $('.side-navigation-' + ID).fadeIn();
+         
+         $('.submenu-close-' + ID).click(function() {
+             $('.side-navigation-' + ID).fadeOut();
+            
+        });
+
+        const subItems =  document.querySelectorAll('.side-navigation-' + ID + ' .navigation-item');
+        for(let j = 0;j < subItems.length;j++){
+          subItems[j].addEventListener('click',()=>{
+            const subItemId = subItems[j].getAttribute('id');
+            $('.side-navigation-' + subItemId).fadeIn();
+            $('.submenu-close-' + subItemId).click(function() {
+             $('.side-navigation-' + subItemId).fadeOut();
+             });
+          });
+        }
+  });
+}
+else{
+  continue;
+}
+}
   // funtion
   function sideMenuMangage() {
     if ($('.side-navigation').css('left') == '0px') {
-      $('.side-navigation').animate({
-        left: '-400px'
-      });
-    }
-    if ($('.side-navigation-Apparel').css('display') == 'block') {
-      $('.side-navigation-Apparel').fadeOut();
-    }
-    if ($('.side-navigation-Accessories').css('display') == 'block') {
-      $('.side-navigation-Accessories').fadeOut();
-    }
-    if ($('.side-navigation-Home-living').css('display') == 'block') {
-      $('.side-navigation-Home-living').fadeOut();
-    }
-    if ($('.side-navigation-Essensials').css('display') == 'block') {
-      $('.side-navigation-Essensials').fadeOut();
-    }
-    if ($('.side-navigation-women').css('display') == 'block') {
-      $('.side-navigation-women').fadeOut();
-    }
-    if ($('.side-navigation-men').css('display') == 'block') {
-      $('.side-navigation-men').fadeOut();
-    }
-    if ($('.side-navigation-tribes-heritage').css('display') == 'block') {
-      $('.side-navigation-tribes-heritage').fadeOut();
-    }
-    if ($('.side-navigation-designer').css('display') == 'block') {
-      $('.side-navigation-designer').fadeOut();
-    }
-    if ($('.side-navigation-bags').css('display') == 'block') {
-      $('.side-navigation-bags').fadeOut();
-    }
-    if ($('.side-navigation-jewellery').css('display') == 'block') {
-      $('.side-navigation-jewellery').fadeOut();
-    }
-    if ($('.side-navigation-stationery').css('display') == 'block') {
-      $('.side-navigation-stationery').fadeOut();
-    }
-    if ($('.side-navigation-home-linen').css('display') == 'block') {
-      $('.side-navigation-home-linen').fadeOut();
-    }
-    if ($('.side-navigation-artEfacts').css('display') == 'block') {
-      $('.side-navigation-artEfacts').fadeOut();
-    }
-    if ($('.side-navigation-paintings').css('display') == 'block') {
-      $('.side-navigation-paintings').fadeOut();
-    }
-    if ($('.side-navigation-decoratives').css('display') == 'block') {
-      $('.side-navigation-decoratives').fadeOut();
-    }
+         $('.side-navigation').animate({
+           left: '-400px'
+         });
+         $('#outsideAreaOfSideNavigation').animate({opacity:'1'});
+        }
+        for(let i = 0; i < sideNavigationItems.length; i++){
+          if(sideNavigationItems[i].hasAttribute('id')){
+            const ID = sideNavigationItems[i].getAttribute('id');
+            if ($('.side-navigation-' + ID).css('display') == 'block') {
+               $('.side-navigation-' + ID).fadeOut();
+              }
+              const subItems =  document.querySelectorAll('.side-navigation-' + ID + ' .navigation-item');
+              for(let j = 0;j < subItems.length;j++){
+                  const subItemId = subItems[j].getAttribute('id');
+                  if ($('.side-navigation-' + subItemId).css('display') == 'block') {
+                    $('.side-navigation-' + subItemId).fadeOut();
+                   }  
+    
+              }
+          }
+        }
+   
   };
   
   // register login section
@@ -140,119 +142,16 @@ $('.input-confirm-password').click(()=>{
     $('.side-navigation').animate({
       left: '0'
     });
+    $('#outsideAreaOfSideNavigation').animate({opacity:'0.5'});
   });
   $('.close-navigation').click(function() {
     $('.side-navigation').animate({
       left: '-400px'
     });
+    $('#outsideAreaOfSideNavigation').animate({opacity:'1'});
   });
-  // Apparel menu
-  $('.Apparel-menu').click(function() {
-    $('.side-navigation-Apparel').fadeIn();
-  });
-  $('.submenu-close-Apparel').click(function() {
-    $('.side-navigation-Apparel').fadeOut();
-  });
-  // accessories submenu
-  $('.Accessories-menu').click(function() {
-    $('.side-navigation-Accessories').fadeIn();
-  });
-  $('.submenu-close-Accessories').click(function() {
-    $('.side-navigation-Accessories').fadeOut();
-  });
-  // home-living
-  $('.Home-living-menu').click(function() {
-    $('.side-navigation-Home-living').fadeIn();
-  });
-  $('.submenu-close-Home-living').click(function() {
-    $('.side-navigation-Home-living').fadeOut();
-  });
-  // Essensials
-  $('.Essensials-menu').click(function() {
-    $('.side-navigation-Essensials').fadeIn();
-  });
-  $('.submenu-close-Essensials').click(function() {
-    $('.side-navigation-Essensials').fadeOut();
-  });
-  // women menu
-  $('.women-menu').click(function() {
-    $('.side-navigation-women').fadeIn();
-  });
-  $('.submenu-close-women').click(function() {
-    $('.side-navigation-women').fadeOut();
-  });
-  // men menu
-  $('.men-menu').click(function() {
-    $('.side-navigation-men').fadeIn();
-  });
-  $('.submenu-close-men').click(function() {
-    $('.side-navigation-men').fadeOut();
-  });
-  // designer
-  $('.designer-menu').click(function() {
-    $('.side-navigation-designer').fadeIn();
-  });
-  $('.submenu-close-designer').click(function() {
-    $('.side-navigation-designer').fadeOut();
-  });
-  // tribes heritage
-  $('.tribes-heritage-menu').click(function() {
-    $('.side-navigation-tribes-heritage').fadeIn();
-  });
-  $('.submenu-close-tribes-heritage').click(function() {
-    $('.side-navigation-tribes-heritage').fadeOut();
-  });
-  // jewellery
-  $('.jewellery-menu').click(function() {
-    $('.side-navigation-jewellery').fadeIn();
-  });
-  $('.submenu-close-jewellery').click(function() {
-    $('.side-navigation-jewellery').fadeOut();
-  });
-  // bags
-  $('.bags-menu').click(function() {
-    $('.side-navigation-bags').fadeIn();
-  });
-  $('.submenu-close-bags').click(function() {
-    $('.side-navigation-bags').fadeOut();
-  });
-  //stationery
-  $('.stationery-menu').click(function() {
-    $('.side-navigation-stationery').fadeIn();
-  });
-  $('.submenu-close-stationery').click(function() {
-    $('.side-navigation-stationery').fadeOut();
-  });
-  // home linen
-  $('.home-linen-menu').click(function() {
-    $('.side-navigation-home-linen').fadeIn();
-  });
-  $('.submenu-close-home-linen').click(function() {
-    $('.side-navigation-home-linen').fadeOut();
-  });
-  // artEfacts
-  $('.artEfacts-menu').click(function() {
-    $('.side-navigation-artEfacts').fadeIn();
-  });
-  $('.submenu-close-artEfacts').click(function() {
-    $('.side-navigation-artEfacts').fadeOut();
-  });
-  // paintings
-  $('.paintings-menu').click(function() {
-    $('.side-navigation-paintings').fadeIn();
-  });
-  $('.submenu-close-paintings').click(function() {
-    $('.side-navigation-paintings').fadeOut();
-  });
-  //decoratives
-  $('.decoratives-menu').click(function() {
-    $('.side-navigation-decoratives').fadeIn();
-  });
-  $('.submenu-close-decoratives').click(function() {
-    $('.side-navigation-decoratives').fadeOut();
-  });
-
-
+ 
+ 
   // categories-link
   $('.Western').click(function() {
     $('.categories-title').text('Western-collection');
@@ -318,14 +217,16 @@ $('.input-confirm-password').click(()=>{
   // loading
   $('#loading').hide();
 
-
-
-
 // scroll management
 $(window).scroll(function() {
   if ($('.search-part').css('top') == '0px') {
     $('.search-part').animate({top: '-250px'});
   }
+});
+
+
+$('#outsideAreaOfSideNavigation').click(()=>{
+  sideMenuMangage();
 });
 
 
