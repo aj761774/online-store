@@ -1000,41 +1000,37 @@ transition: all 0.3s ease-out 0s;
 .product-description-page{
 padding-left: 1rem;
 padding-top: 4.5rem;
+padding-bottom:1rem ;
 color:black;
 display:flex;
 flex-wrap:wrap;
-/* margin-left:1rem; */
+background-color: rgba(0,0,0,0.1);
+
 }
 .about-product{
-width:420px;
+width:50rem;
 display:inline-block;
-position:relative;
+margin-left:2%;
+margin-right: 2%;
+}
 
+#myTab{
+  margin:1.5rem 2rem  0 1.5rem;
 }
-.product-description{
-width:450px;
-}
-@media only screen and (min-width:486px) and (max-width:1300px) {
-  .product-description{
-  width:80%;
-  }
-}
-@media only screen and (min-width:662px) and (max-width:828px) {
-  .about-product{
-  width:270px;
-  margin:0 1.5rem;
-  }
-}
-@media only screen and (min-width:828px){
-  .about-product{
 
-  margin:0 1.5rem;
-  }
+#myTabContent{
+  margin:0 2rem  0.5rem 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-top:none;
 }
+ 
+ 
   .smallImg{
     width:4.65rem;
     height:4.65rem;
     opacity:0.5;
+    border: 2.5px solid black;
   }
   .smallImg:hover{
     cursor: pointer;
@@ -1067,16 +1063,7 @@ width:450px;
     color: #fff;
     background-size: 100%;
   }
-  @media screen and (max-width:600px){
-    .cart-btn{
-      position: sticky;
-      bottom: 0;
-    }
-    .buy-btn{
-      position: sticky;
-      bottom: 3rem;
-    }
-  }
+ 
 .wishlist{
 position: relative;
 top:2rem;
